@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  plugin-builder:
+    image: mcr.microsoft.com/dotnet/sdk:6.0
+    working_dir: /app
+    volumes:
+      - .:/app
+      - ./output:/app/bin/Release
+    command: >
+      sh -c "dotnet build app/Plugin.csproj -c Release && cp /app/bin/Release/net6.0/*.dll /app/bin/Release/"

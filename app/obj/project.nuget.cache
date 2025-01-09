@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "1onrmIzkL4dOIHvSoqv6i/6c7hysFAd2ZsVHv2RW4ankpIY2NtYCDKTZZDlcFp1W5ygwf3DA6Nni+OTvWZbNJA==",
+  "success": true,
+  "projectFilePath": "/app/app/Plugin.csproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/mediabrowser.common/3.5.0/mediabrowser.common.3.5.0.nupkg.sha512",
+    "/root/.nuget/packages/mediabrowser.server.core/3.5.0/mediabrowser.server.core.3.5.0.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/root/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

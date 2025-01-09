@@ -1,0 +1,10 @@
+/app/app/obj/Release/netstandard2.0/Plugin.csproj.AssemblyReference.cache
+/app/app/obj/Release/netstandard2.0/Plugin.GeneratedMSBuildEditorConfig.editorconfig
+/app/app/obj/Release/netstandard2.0/Plugin.AssemblyInfoInputs.cache
+/app/app/obj/Release/netstandard2.0/Plugin.AssemblyInfo.cs
+/app/app/obj/Release/netstandard2.0/Plugin.csproj.CoreCompileInputs.cache
+/app/app/bin/Release/netstandard2.0/Plugin.deps.json
+/app/app/bin/Release/netstandard2.0/Plugin.dll
+/app/app/bin/Release/netstandard2.0/Plugin.pdb
+/app/app/obj/Release/netstandard2.0/Plugin.dll
+/app/app/obj/Release/netstandard2.0/Plugin.pdb
