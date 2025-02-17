@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emby Recs</title>
+</head>
+<body>
+    <div data-role="page" data-title="Emby Recs" class="page type-interior pluginConfigurationPage" data-controller="__plugin/embyrecs.js">
+        <div data-role="content">
+            <div class="content-primary">
+                <h1>Emby Recs Plugin</h1>
+                <p>Manage your recommendations here.</p>
+
+                <form id="embyrecsConfigurationForm">
+                    <div class="checkboxContainer">
+                        <label>
+                            <input is="emby-checkbox" type="checkbox" id="chkEnableExtraction" name="EnableExtractionDuringLibraryScan" />
+                            <span>Enable Extraction During Library Scan</span>
+                        </label>
+                    </div>
+
+                    <div class="checkboxContainer">
+                        <label>
+                            <input is="emby-checkbox" type="checkbox" id="chkEnableLocalMedia" name="EnableLocalMediaFolderSaving" />
+                            <span>Enable Local Media Folder Saving</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <button is="emby-button" type="submit" class="raised button-submit block"><span>Save</span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

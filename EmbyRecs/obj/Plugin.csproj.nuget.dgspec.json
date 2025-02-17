@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/app/app/Plugin.csproj": {}
+    "/EmbyRecs/EmbyRecs/Plugin.csproj": {}
   },
   "projects": {
-    "/app/app/Plugin.csproj": {
+    "/EmbyRecs/EmbyRecs/Plugin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/app/app/Plugin.csproj",
+        "projectUniqueName": "/EmbyRecs/EmbyRecs/Plugin.csproj",
         "projectName": "Plugin",
-        "projectPath": "/app/app/Plugin.csproj",
+        "projectPath": "/EmbyRecs/EmbyRecs/Plugin.csproj",
         "packagesPath": "/root/.nuget/packages/",
-        "outputPath": "/app/app/obj/",
+        "outputPath": "/EmbyRecs/EmbyRecs/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.Memory": {
+              "target": "Package",
+              "version": "[4.5.5, )"
             },
             "mediabrowser.server.core": {
               "target": "Package",

@@ -5,7 +5,7 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 RUN apt-get update && apt-get install -y unzip
 
 # Copy your plugin code into the container
-WORKDIR /app
+WORKDIR /EmbyRecs
 COPY . .
 
 # Build the plugin

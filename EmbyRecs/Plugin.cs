@@ -1,18 +1,23 @@
 using System;
+using System.Collections.Generic;
+using MediaBrowser.Controller;
 using MediaBrowser.Common.Configuration;
 using MediaBrowser.Common.Plugins;
 using MediaBrowser.Model.Plugins;
 using MediaBrowser.Model.Serialization;
 using EmbyRecs.Configuration;
+using MediaBrowser.Model.Drawing;
 
 namespace EmbyRecs
 {
-    public class Plugin : BasePlugin<PluginConfiguration>
+    public class Plugin : BasePlugin<PluginConfiguration>, IHasWebPages
     {
-        public Plugin(IApplicationPaths applicationPaths, IXmlSerializer xmlSerializer) 
+        private readonly IServerApplicationHost _appHost;
+        public Plugin(IApplicationPaths applicationPaths, IXmlSerializer xmlSerializer, IServerApplicationHost appHost) 
             : base(applicationPaths, xmlSerializer) 
         {
             Instance = this;
+            _appHost = appHost;
         }
 
         private Guid _id = new Guid("b67ac8d0-efd6-4dbb-94a7-00aed19c0292");
@@ -47,5 +52,25 @@ namespace EmbyRecs
         // </summary>
         // <value>The instance.</value>
         public static Plugin Instance { get; private set; }
+
+        public PluginConfiguration PluginConfiguration => Configuration;
+
+        public IEnumerable<PluginPageInfo> GetPages()
+        {
+            return new[]
+            {
+                new PluginPageInfo
+                {
+                    Name = "EmbyRecs",
+                    EmbeddedResourcePath = GetType().Namespace + ".Configuration.configPage.html",
+                    EnableInMainMenu = true
+                },
+                new PluginPageInfo
+                {
+                    Name = "embyrecsjs",
+                    EmbeddedResourcePath = GetType().Namespace + ".Configuration.embyrecs.js"
+                }
+            };
+        }
     }
 }

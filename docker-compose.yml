@@ -2,9 +2,9 @@ version: '3.8'
 services:
   plugin-builder:
     image: mcr.microsoft.com/dotnet/sdk:6.0
-    working_dir: /app
+    working_dir: /EmbyRecs
     volumes:
-      - .:/app
-      - ./output:/app/bin/Release
+      - .:/EmbyRecs
+      - ./output:/EmbyRecs/bin/Release
     command: >
-      sh -c "dotnet build app/Plugin.csproj -c Release && cp /app/bin/Release/net6.0/*.dll /app/bin/Release/"
+      sh -c "dotnet build EmbyRecs/Plugin.csproj -c Release && cp /EmbyRecs/bin/Release/net6.0/*.dll /EmbyRecs/bin/Release/"
